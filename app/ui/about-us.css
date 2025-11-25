@@ -1,0 +1,237 @@
+.about-us-hero-content{
+  top: 50%;
+  width: 45%;
+  padding-top: 7.8125vw;
+  margin-left: clamp(25px, 14.58vw, 280px);
+}
+
+.about-us-blog-hero{
+    background: transparent linear-gradient(110deg, #00aa72 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    padding-bottom: 50px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.about-us-services{
+    background: transparent linear-gradient(180deg, #F7FFEC 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.about-us-services-head-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-us-services-head-container .divider{
+    height: 5px;
+    width: 100px;
+    background-color: var(--primary-color);
+}
+
+.about-us-services-head-container .sub-heading{
+    margin-bottom: 0px;
+    color: black;
+}
+
+.about-us-services-head-container .section-heading{
+    color: var(--primary-color);
+    margin-bottom: 0px;
+}
+
+/* why qucentrio section */
+.about-us-why-qcentrio-section{
+    padding-top: 0px;
+}
+
+.about-us-why-qcentrio-section .head{
+    text-align: center;
+    color: var(--primary-color);
+    font-family: "Quadran-Black";
+}
+
+.about-us-why-qcentrio-section .subhead{
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* join us buttons styles */
+.join-us-buttons-container{
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.join-us-buttons-container.balance-section{
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+.join-us-buttons-container > div{
+    background-color: #F7FFEC;
+    padding-top: clamp(33px, 2.6vw, 50px);
+    padding-bottom: clamp(33px, 2.6vw, 50px);
+}
+
+.join-us-buttons-container .section-heading{
+    font-family: "Quadran-Black";
+    text-align: center;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-us-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.join-us-buttons .divider{
+    width: 70px;
+    height: 3px;
+    background-color: #E9E9E9;
+}
+
+.join-us-buttons > a:last-child button{
+    background-color: black;
+}
+
+.about-us-map-section{
+    padding-left: clamp(25px, 14.58vw, 280px);
+    padding-right: clamp(25px, 14.58vw, 280px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.about-us-map-section .global-presence-section .section-heading,.about-us-map-section .global-presence-section .global-presence-sub-heading{
+    display: none;
+}
+
+.about-us-map-section .global-presence-section{
+    padding: 0;
+}
+
+.about-us-map-content{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.about-us-map-content .section-heading{
+    margin-bottom: 30px;
+}
+
+.about-us-map-content p{
+     margin-bottom: 30px;
+}
+
+.about-us-map-content > div:first-child{
+    flex: 2;
+}
+
+.about-us-map-content > div:last-child{
+    flex: 1;
+    margin-top: 30px;
+}
+
+.about-us-map-num{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-map-num > div{
+    display: flex;
+    gap: 10px;
+}
+
+.about-us-map-num-img{
+    width: 70px;
+    height: 70px 
+}
+
+
+.about-us-map-num-img > div{
+    border: 3px solid #DEDEDE;
+    width: 3.645vw;
+    height: 3.645vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-us-map-num-content h3{
+   font-family: "Quadran-Black";
+   color: var(--primary-color);
+   font-size: 1.875rem;
+}
+
+.about-us-map-num-content p{
+    font-family: "Quadran-Black";
+   font-size: 1.125rem; 
+}
+
+@media screen and (max-width: 900px) {
+    .join-us-buttons-container .section-heading{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-us-hero-content{
+        width: 80%;
+    }
+
+    .about-us-services-head-container{
+        flex-direction: column;
+        align-items: unset;
+        gap: 20px;
+    }
+
+    .about-us-services-head-container > span{
+        width: 100%;
+    }
+
+    .about-us-services-head-container .section-heading{
+        text-align: left;
+    }
+
+    .join-us-buttons{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .join-us-buttons .divider{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-us-hero-content{
+        margin-left: 20px;
+    }
+
+    .join-us-buttons-container{
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
